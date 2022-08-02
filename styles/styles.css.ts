@@ -32,17 +32,47 @@ export const main = sprinkles({
   alignItems: 'center'
 })
 
-export const code = style({
-  background: '#fafafa',
-  borderRadius: '5px',
-  padding: '0.75rem',
-  fontSize: '1.1rem',
-  fontFamily: 'Menlo, Monaco, Lucida Console, Liberation Mono, Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace'
+export const title = style([
+  sprinkles({
+    textAlign: 'center',
+    margin: 'none',
+    fontSize: 'large'
+  }),
+  {
+    selectors: {
+      '&': {
+        lineHeight: '1.15'
+      },
+    },
+    ':hover': {
+      textDecoration: 'underline'
+    },
+    ':focus': {
+      textDecoration: 'underline'
+    },
+    ':active': {
+      textDecoration: 'underline'
+    }
+  }
+])
+
+export const description = sprinkles({
+  textAlign: 'center',
+  marginY: 'medium',
+  fontSize: 'medium'
+
+})
+
+export const code = sprinkles({
+  backgroundColor: '#fafafa',
+  borderRadius: 'small',
+  padding: 'small',
+  fontSize: 'medium',
+  fontFamily: 'default'
 })
 
 export const titleLink = sprinkles({
   color: "blue-500",
   backgroundColor: "gray-700",
-  // color: vars.color.brand,
   textDecoration: 'none',
 })

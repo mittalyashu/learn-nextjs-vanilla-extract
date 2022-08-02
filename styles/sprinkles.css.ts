@@ -3,6 +3,10 @@ import {
   createSprinkles
 } from '@vanilla-extract/sprinkles';
 
+const font = {
+  'default': 'Menlo, Monaco, Lucida Console, Liberation Mono, Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace',
+}
+
 const space = {
   none: 0,
   small: '4px',
@@ -49,6 +53,10 @@ const responsiveProperties = defineProperties({
       'center',
       'flex-end'
     ],
+    marginTop: space,
+    marginBottom: space,
+    marginLeft: space,
+    marginRight: space,
     paddingTop: space,
     paddingBottom: space,
     paddingLeft: space,
@@ -57,6 +65,10 @@ const responsiveProperties = defineProperties({
     height: size,
     width: size,
     minWidth: size,
+    fontSize: space,
+    borderRadius: space,
+    fontFamily: font,
+    textAlign: ['left', 'right', 'center']
     // etc.
   },
   shorthands: {
@@ -68,6 +80,14 @@ const responsiveProperties = defineProperties({
     ],
     paddingX: ['paddingLeft', 'paddingRight'],
     paddingY: ['paddingTop', 'paddingBottom'],
+    margin: [
+      'marginTop',
+      'marginBottom',
+      'marginLeft',
+      'marginRight'
+    ],
+    marginX: ['marginLeft', 'marginRight'],
+    marginY: ['marginTop', 'marginBottom'],
     placeItems: ['justifyContent', 'alignItems']
   }
 });
@@ -75,6 +95,7 @@ const responsiveProperties = defineProperties({
 const colors = {
   'black': 'black',
   'white': 'white',
+  '#fafafa': '#fafafa',
   'blue-50': '#eff6ff',
   'blue-100': '#dbeafe',
   'blue-200': '#bfdbfe',
@@ -97,10 +118,11 @@ const colorProperties = defineProperties({
   ],
   properties: {
     color: colors,
+    background: colors,
     backgroundColor: colors,
     textDecoration: {
       'none': "none"
-    }
+    },
   }
 })
 

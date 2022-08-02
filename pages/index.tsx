@@ -18,11 +18,11 @@ const Home: NextPage = () => {
         </Head>
 
         <main className={vanilla.main}>
-          <h1 className={styles.title}>
+          <h1 className={vanilla.title}>
             Welcome to <a className={vanilla.titleLink} href="https://nextjs.org">Next.js!</a>
           </h1>
 
-          <p className={styles.description}>
+          <p className={vanilla.description}>
             Get started by editing{' '}
             <code className={vanilla.code}>pages/index.tsx</code>
           </p>
