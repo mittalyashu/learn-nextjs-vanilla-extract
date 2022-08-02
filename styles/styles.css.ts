@@ -13,11 +13,20 @@ export const [themeClass, themeVars] = createTheme({
   }
 });
 
-export const main = style({
+export const body = sprinkles({
+  color: {
+    darkMode: 'white'
+  },
+  backgroundColor: {
+    darkMode: "black"
+  }
+})
+
+export const main = sprinkles({
   minHeight: '100vh',
-  padding: '4rem 0',
+  paddingY: "large",
   flex: 1,
-  display:'flex',
+  display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center'
@@ -33,7 +42,7 @@ export const code = style({
 
 export const titleLink = sprinkles({
   color: "blue-500",
-  backgroundColor: "gray-700"
+  backgroundColor: "gray-700",
   // color: vars.color.brand,
-  // textDecoration: 'none',
+  textDecoration: 'none',
 })
