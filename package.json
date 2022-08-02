@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-extract-nextjs",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@types/react": "17.0.3",
+    "@vanilla-extract/babel-plugin": "0.2.0",
+    "@vanilla-extract/css": "0.2.0",
+    "@vanilla-extract/webpack-plugin": "0.2.0",
+    "mini-css-extract-plugin": "1.4.1",
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "4.2.4"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "description": ""
+}
