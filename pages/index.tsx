@@ -4,6 +4,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import * as vanilla from "../styles/styles.css"
 
+console.log('vanilla')
+console.log(vanilla)
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -13,14 +16,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={vanilla.exampleStyle}>
+      <main className={vanilla.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          <code className={vanilla.code}>pages/index.tsx</code>
         </p>
 
         <div className={styles.grid}>
