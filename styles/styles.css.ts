@@ -13,13 +13,6 @@ export const [themeClass, themeVars] = createTheme({
   }
 });
 
-export const exampleStyle = style({
-  backgroundColor: themeVars.color.brand,
-  fontFamily: themeVars.font.body,
-  color: "white",
-  padding: 10
-});
-
 export const main = style({
   minHeight: '100vh',
   padding: '4rem 0',
